@@ -7,6 +7,10 @@
     <?php wp_head(); ?>
   </head>
   <body>
-  <header>
-
+  <header id="top-header">
+    <h1 class="title">
+      <a href="<?php echo home_url(); ?>">
+        <?php bloginfo('name'); ?>
+      </a>
+    </h1>
   </header>

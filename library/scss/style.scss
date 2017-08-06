@@ -9,6 +9,20 @@ body {
   font: 12px/20px "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS P Gothic", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
+#top-header {
+  padding: 30px;
+  .title {
+    text-align: center;
+    font-size: 34px;
+    a {
+      text-decoration: none;
+      &:visited, &:hover, &:active {
+        color: #333333;
+      }
+    }
+  }
+}
+
 main {
   h3 {
     line-height: 1.4em;
@@ -21,7 +35,7 @@ main {
   article {
     margin-bottom: 40px;
     border-radius: 3px;
-    border: 3px solid #f9f9f9;
+    border-bottom: 3px solid #f9f9f9;
     box-shadow: 0 0 0 1px #E6E8EA inset;
     a {
       display: flex;
