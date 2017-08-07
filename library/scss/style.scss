@@ -5,8 +5,10 @@ Author: Shogo
 Description: イケダハヤトのブログデザインに似せたテーマ
 version： 1.0.0
 */
-body {
-  font: 12px/20px "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS P Gothic", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif
+* {
+  padding: 0;
+  margin: 0;
+  font-family :"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS P Gothic", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #top-header {
@@ -33,6 +35,7 @@ main {
   margin: 0 auto;
   width: 640px;
   article {
+    padding: 20px;
     margin-bottom: 40px;
     border-radius: 3px;
     border-bottom: 3px solid #f9f9f9;
@@ -42,19 +45,33 @@ main {
       text-decoration: none;
     }
     .eyecatch img {
-      width: 150px;
-      height: 150px;
+      width: 140px;
+      height: 140px;
     }
-    .entry-title {
-      padding: 0;
-      font-size: 22px;
-      font-weight: normal;
-      color: #333333;
+    .entry-right {
+      margin-left: 20px;
+      .entry-title {
+        padding: 0;
+        font-size: 22px;
+        font-weight: normal;
+        color: #333333;
+      }
+      .date {
+        margin-top: 8px;
+        font-size: 13px;
+        color:#003D73
+      }
     }
-    .date {
-      margin-top: 8px;
-      font-size: 13px;
-      color:#003D73
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .top-post-list {
+    width: 95%;
+    article {
+      .entry-title {
+        font-size: 18px;
+      }
     }
   }
 }
