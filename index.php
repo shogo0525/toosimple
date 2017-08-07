@@ -10,7 +10,7 @@
                 <?php if (has_post_thumbnail()) : ?>
                     <?php the_post_thumbnail('thumbnail'); ?>
                 <?php else : ?>
-                  <img src="<?php echo get_template_directory_uri(); ?>/library/images/noimage.png">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/noimage.png">
                 <?php endif; ?>
               </figure>
             </div>
