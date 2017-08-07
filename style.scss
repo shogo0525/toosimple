@@ -11,11 +11,24 @@ version： 1.0.0
   font-family :"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS P Gothic", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+p {
+  font-size: 18px;
+}
+
 a {
   text-decoration: none;
   color: #333333;
   &:visited, &:hover, &:active {
     color: #333333;
+  }
+}
+
+figure {
+  line-height: 1;
+  padding: 10px 0;
+  figcaption {
+    color: lightslategrey;
+    font-size: 14px;
   }
 }
 
@@ -82,12 +95,32 @@ main {
   }
 }
 
+.post {
+  article {
+    .header {
+      padding: 50px 0;
+      h1 {
+        font-size: 24px;
+        font-weight: normal;
+      }
+    }
+    .body {
+      p {
+        line-height: 2;
+        margin: 1em 0;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
-  .top-post-list {
+  .container {
     width: 95%;
-    article {
-      .entry-title {
-        font-size: 18px;
+    .top-post-list {
+      article {
+        .entry-title {
+          font-size: 18px;
+        }
       }
     }
   }
