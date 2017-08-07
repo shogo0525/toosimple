@@ -11,15 +11,34 @@ version： 1.0.0
   font-family :"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS P Gothic", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #333333;
+  &:visited, &:hover, &:active {
+    color: #333333;
+  }
+}
+
+.container {
+  width: 640px;
+  margin: 0 auto;
+}
+
 #top-header {
   padding: 30px;
   .title {
     text-align: center;
     font-size: 34px;
-    a {
-      text-decoration: none;
-      &:visited, &:hover, &:active {
-        color: #333333;
+  }
+  #header-menu {
+    margin-top: 25px;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      list-style: none;
+      li {
+        margin-right: 15px;
       }
     }
   }
@@ -32,8 +51,6 @@ main {
 }
 
 .top-post-list {
-  margin: 0 auto;
-  width: 640px;
   article {
     padding: 20px;
     margin-bottom: 40px;
@@ -59,7 +76,7 @@ main {
       .date {
         margin-top: 8px;
         font-size: 13px;
-        color:#003D73
+        color: #003CD5;
       }
     }
   }

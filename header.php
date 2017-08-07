@@ -7,10 +7,15 @@
     <?php wp_head(); ?>
   </head>
   <body>
-  <header id="top-header">
-    <h1 class="title">
-      <a href="<?php echo home_url(); ?>">
-        <?php bloginfo('name'); ?>
-      </a>
-    </h1>
-  </header>
+  <div class="container">
+    <header id="top-header">
+      <h1 class="title">
+        <a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+      </h1>
+      <nav id="header-menu">
+        <?php wp_nav_menu(array(
+                      'container' => false,
+                      'items_wrap' => '<ul>%3$s</ul>'
+        )); ?>
+      </nav>
+    </header>
