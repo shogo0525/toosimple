@@ -22,6 +22,19 @@
         </article>
       <?php endwhile; ?>
       <?php endif; ?>
+      <?php
+        $big = 9999999999;
+        $args = array(
+            'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+            'current' => max( 1, get_query_var('paged') ),
+            'total'   => $wp_query->max_num_pages,
+            'mid_size' => 1,
+            'type' => 'list'
+        );
+        echo paginate_links($args);
+        //var_dump(paginate_links($args));
+        //echo (paginate_links($args)[0]);
+      ?>
     </div>
   </main>
 
