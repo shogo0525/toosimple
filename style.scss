@@ -112,6 +112,11 @@ main {
 
 .post {
   article {
+    a {
+      text-decoration: underline;
+      color: #2355a7;
+      &:visited, &:hover, &:active { color: #2355a7; }
+    }
     .header {
       padding: 50px 0;
       h1 {
