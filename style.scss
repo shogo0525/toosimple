@@ -5,15 +5,15 @@ Author: Shogo Inamoto
 Description: シンプル過ぎるテーマです
 version： 1.0.0
 */
+
+// Base
 * {
   padding: 0;
   margin: 0;
   font-family :"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS P Gothic", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-p {
-  font-size: 18px;
-}
+p { font-size: 18px; }
 
 a {
   text-decoration: none;
@@ -23,9 +23,7 @@ a {
   }
 }
 
-ul {
-  list-style: none;
-}
+ul { list-style: none; }
 
 figure {
   line-height: 1;
@@ -36,6 +34,7 @@ figure {
   }
 }
 
+// Original
 .container {
   width: 640px;
   margin: 0 auto;
@@ -54,9 +53,7 @@ figure {
       flex-wrap: wrap;
       justify-content: flex-start;
       list-style: none;
-      li {
-        margin-right: 15px;
-      }
+      li { margin-right: 15px; }
     }
   }
 }
@@ -78,9 +75,7 @@ figure {
 }
 
 main {
-  h3 {
-    line-height: 1.4em;
-  }
+  h3 { line-height: 1.4em; }
 }
 
 .top-post-list {
@@ -138,9 +133,17 @@ main {
     width: 95%;
     .top-post-list {
       article {
-        .entry-title {
-          font-size: 18px;
-        }
+        .entry-title { font-size: 18px; }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    .top-post-list {
+      article {
+        .eyecatch { display: none; }
       }
     }
   }
