@@ -11,6 +11,7 @@ version： 1.0.0
   padding: 0;
   margin: 0;
   font-family :"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS P Gothic", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 p { font-size: 18px; }
@@ -27,7 +28,6 @@ ul { list-style: none; }
 
 figure {
   line-height: 1;
-  padding: 10px 0;
   figcaption {
     color: lightslategrey;
     font-size: 14px;
@@ -130,7 +130,7 @@ main {
 
 @media only screen and (max-width: 768px) {
   .container {
-    width: 95%;
+    width: 90%;
     .top-post-list {
       article {
         .entry-title { font-size: 18px; }
