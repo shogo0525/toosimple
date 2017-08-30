@@ -1,8 +1,171 @@
-@charset "utf-8";
+@charset "UTF-8";
 /*
 theme Name: TooSimple
 Author: Shogo Inamoto
 Description: シンプル過ぎるテーマです
 version： 1.0.0
 */
-*{padding:0;margin:0;font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS P Gothic", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;box-sizing:border-box}p{font-size:18px}a{text-decoration:none;color:#333}a:visited,a:hover,a:active{color:#333}ul{list-style:none}figure{line-height:1}figure figcaption{color:lightslategrey;font-size:14px}.container{width:640px;margin:0 auto}#top-header{padding:30px}#top-header .title{text-align:center;font-size:34px}#top-header #header-menu{margin-top:25px}#top-header #header-menu ul{display:flex;flex-wrap:wrap;justify-content:flex-start;list-style:none}#top-header #header-menu ul li{margin-right:15px}.page-numbers{display:flex;justify-content:space-around;align-items:center}.page-numbers li span,.page-numbers li a{display:inline-block;box-shadow:0 0 0 1px #e6e8ea inset;border-bottom:3px solid #f9f9f9;padding:2px 5px}.page-numbers li .prev,.page-numbers li .next{padding:7px 30px}.page-numbers li .current{background-color:#e6e8ea}main h3{line-height:1.4em}.top-post-list article{padding:20px;margin-bottom:40px;border-radius:3px;border-bottom:3px solid #f9f9f9;box-shadow:0 0 0 1px #e6e8ea inset}.top-post-list article a{display:flex;text-decoration:none}.top-post-list article .eyecatch img{width:140px;height:140px}.top-post-list article .entry-right{margin-left:20px}.top-post-list article .entry-right .entry-title{padding:0;font-size:22px;font-weight:normal;color:#333}.top-post-list article .entry-right .date{margin-top:8px;font-size:13px;color:#003cd5}.post article a{text-decoration:underline;color:#2355a7}.post article a:visited,.post article a:hover,.post article a:active{color:#2355a7}.post article .header{padding:50px 0}.post article .header h1{font-size:24px;font-weight:normal}.post article .body p{line-height:2;margin:1em 0}@media only screen and (max-width:768px){.container{width:90%}.container .top-post-list article .entry-title{font-size:18px}}@media only screen and (max-width:500px){.container .top-post-list article .eyecatch{display:none}}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS P Gothic", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-sizing: border-box; }
+
+p {
+  font-size: 18px; }
+
+a {
+  text-decoration: none;
+  color: #333333; }
+  a:visited, a:hover, a:active {
+    color: #333333; }
+
+ul {
+  list-style: none; }
+
+figure {
+  line-height: 1; }
+  figure figcaption {
+    color: lightslategrey;
+    font-size: 14px; }
+
+.container {
+  width: 640px;
+  margin: 0 auto; }
+
+#top-header {
+  padding: 30px; }
+  #top-header .title {
+    text-align: center;
+    font-size: 34px; }
+  #top-header #header-menu {
+    margin-top: 25px; }
+    #top-header #header-menu ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      list-style: none; }
+      #top-header #header-menu ul li {
+        margin-right: 15px; }
+
+footer {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  background-color: white;
+  border-radius: 3px;
+  border-bottom: 3px solid #f9f9f9;
+  box-shadow: 0 0 0 1px #E6E8EA inset;
+  font-size: 14px; }
+  footer .profile-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 15px;
+    vertical-align: bottom; }
+  footer .profile-description .name {
+    margin-bottom: 5px; }
+    footer .profile-description .name .name-en {
+      font-size: 12px;
+      display: block; }
+  footer .profile-description .tag {
+    display: block;
+    background-color: #e3e626;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px; }
+
+.page-numbers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  padding: 5px 0; }
+  .page-numbers li span, .page-numbers li a {
+    display: inline-block;
+    box-shadow: 0 0 0 1px #E6E8EA inset;
+    border-bottom: 3px solid #f9f9f9;
+    padding: 2px 5px; }
+  .page-numbers li .prev, .page-numbers li .next {
+    padding: 7px 30px; }
+  .page-numbers li .current {
+    background-color: #e6e8ea; }
+
+main h3 {
+  line-height: 1.4em; }
+
+.top-post-list article {
+  padding: 20px;
+  margin-bottom: 40px;
+  background: white;
+  border-radius: 3px;
+  border-bottom: 3px solid #f9f9f9;
+  box-shadow: 0 0 0 1px #E6E8EA inset; }
+  .top-post-list article a {
+    display: flex;
+    text-decoration: none; }
+  .top-post-list article .eyecatch img {
+    width: 140px;
+    height: 140px; }
+  .top-post-list article .entry-right {
+    margin-left: 20px; }
+    .top-post-list article .entry-right .entry-title {
+      padding: 0;
+      font-size: 22px;
+      font-weight: normal;
+      color: #333333; }
+    .top-post-list article .entry-right .date {
+      margin-top: 8px;
+      font-size: 13px;
+      color: #003CD5; }
+
+.single-post article a {
+  text-decoration: underline;
+  color: #2355a7; }
+  .single-post article a:visited, .single-post article a:hover, .single-post article a:active {
+    color: #2355a7; }
+.single-post article .header {
+  padding: 50px 0; }
+  .single-post article .header h1 {
+    font-size: 24px;
+    font-weight: normal; }
+.single-post article .body h2 {
+  margin: 25px 0; }
+.single-post article .body p {
+  line-height: 2;
+  margin: 1em 0; }
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: #f0f0f0; }
+
+  .container {
+    width: 100%; }
+    .container #top-header {
+      background: white; }
+    .container .top-post-list {
+      width: 90%;
+      margin: 0 auto;
+      padding: 10px 0; }
+      .container .top-post-list article {
+        padding: 10px;
+        margin-bottom: 10px;
+        border-bottom: none; }
+        .container .top-post-list article .eyecatch {
+          display: none; }
+        .container .top-post-list article .entry-right {
+          margin-left: 0px; }
+          .container .top-post-list article .entry-right .entry-title {
+            font-size: 16px; }
+    .container .single-post {
+      background: white;
+      width: 96%;
+      margin: 0 auto;
+      padding: 10px;
+      margin-top: 10px; }
+      .container .single-post article .header {
+        padding: 25px 0; } }
+
+/*# sourceMappingURL=style.css.map */

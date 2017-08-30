@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="wrap">
   <main>
-    <div class="post">
+    <div class="single-post">
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 

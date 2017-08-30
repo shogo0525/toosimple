@@ -58,10 +58,50 @@ figure {
   }
 }
 
+footer {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  background-color: white;
+  border-radius: 3px;
+  border-bottom: 3px solid #f9f9f9;
+  box-shadow: 0 0 0 1px #E6E8EA inset;
+  font-size: 14px;
+  .profile-img {
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 0 15px;
+      vertical-align: bottom;
+    }
+  }
+  .profile-description {
+    .name {
+      margin-bottom: 5px;
+      .name-en {
+        font-size: 12px;
+        display: block;
+      }
+    }
+    .tag {
+      display: block;
+      background-color: #e3e626;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      margin-right: 5px;
+    }
+  }
+}
+
 .page-numbers {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: white;
+  padding: 5px 0;
   li {
     span, a {
       display: inline-block;
@@ -82,6 +122,7 @@ main {
   article {
     padding: 20px;
     margin-bottom: 40px;
+    background: white;
     border-radius: 3px;
     border-bottom: 3px solid #f9f9f9;
     box-shadow: 0 0 0 1px #E6E8EA inset;
@@ -110,7 +151,7 @@ main {
   }
 }
 
-.post {
+.single-post {
   article {
     a {
       text-decoration: underline;
@@ -125,6 +166,7 @@ main {
       }
     }
     .body {
+      h2 { margin: 25px 0; }
       p {
         line-height: 2;
         margin: 1em 0;
@@ -134,21 +176,33 @@ main {
 }
 
 @media only screen and (max-width: 768px) {
+  body { background-color: #f0f0f0; }
   .container {
-    width: 90%;
+    width: 100%;
+    #top-header { background: white; }
     .top-post-list {
+      width: 90%;
+      margin: 0 auto;
+      padding: 10px 0;
       article {
-        .entry-title { font-size: 18px; }
+        padding: 10px;
+        margin-bottom: 10px;
+        border-bottom: none;
+        .eyecatch { display: none; }
+        .entry-right {
+          margin-left: 0px;
+          .entry-title { font-size: 16px; }
+        }
       }
     }
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .container {
-    .top-post-list {
+    .single-post {
+      background: white;
+      width: 96%;
+      margin: 0 auto;
+      padding: 10px;
+      margin-top: 10px;
       article {
-        .eyecatch { display: none; }
+        .header { padding: 25px 0; }
       }
     }
   }
