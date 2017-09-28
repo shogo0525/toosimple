@@ -134,8 +134,8 @@ main h3 {
 .single-post article .body h2 {
   margin: 25px 0; }
 .single-post article .body p {
-  line-height: 2;
-  margin: 1em 0; }
+  line-height: 1.8;
+  margin: 2.5em 0; }
 
 @media only screen and (max-width: 768px) {
   body {
