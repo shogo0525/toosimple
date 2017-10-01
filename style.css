@@ -143,9 +143,6 @@ main h3 {
 
   .container {
     width: 100%; }
-    .container img {
-      max-width: 100%;
-      height: auto; }
     .container #top-header {
       background: white; }
     .container .top-post-list {
@@ -168,6 +165,9 @@ main h3 {
       margin: 0 auto;
       padding: 10px;
       margin-top: 10px; }
+      .container .single-post img {
+        max-width: 100%;
+        height: auto; }
       .container .single-post article .header {
         padding: 25px 0; } }
 
