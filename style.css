@@ -143,6 +143,9 @@ main h3 {
 
   .container {
     width: 100%; }
+    .container img {
+      max-width: 100%;
+      height: auto; }
     .container #top-header {
       background: white; }
     .container .top-post-list {

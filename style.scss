@@ -179,6 +179,10 @@ main {
   body { background-color: #f0f0f0; }
   .container {
     width: 100%;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
     #top-header { background: white; }
     .top-post-list {
       width: 90%;
